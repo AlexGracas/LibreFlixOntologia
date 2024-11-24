@@ -5,7 +5,8 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-16="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16"/>
     
 
@@ -21,10 +22,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#atualEm -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#atuaEm -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#atualEm">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#atuaEm">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#trabalha"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#elenco"/>
     </owl:ObjectProperty>
     
 
@@ -34,6 +36,21 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#edita">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#trabalha"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#elenco -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#elenco">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Ator"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#ConteudoAudioVisual"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#localizacao -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#localizacao"/>
     
 
 
@@ -54,6 +71,81 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#dataLancamento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#dataLancamento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Conteudo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#duracao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#duracao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#ConteudoAudioVisual"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#idioma -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#idioma">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Audio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Legenda"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#idiomaNativo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#idiomaNativo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Conteudo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#magnetLink -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#magnetLink">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Torrent"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#resumo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#resumo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Conteudo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#titulo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#titulo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Conteudo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -62,10 +154,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Arquivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Arquivo"/>
+    
+
+
     <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Ator -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Ator">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Audio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Audio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Arquivo"/>
     </owl:Class>
     
 
@@ -100,9 +206,31 @@
     
 
 
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Legenda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Legenda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Arquivo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Local -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Local"/>
+    
+
+
     <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Midia -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Midia"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#MidiaVirtual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#MidiaVirtual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Midia"/>
+    </owl:Class>
     
 
 
@@ -120,11 +248,49 @@
     
 
 
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Stream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Stream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#MidiaVirtual"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Série -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Série">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#ConteudoAudioVisual"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Torrent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Torrent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#MidiaVirtual"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#We_Are_Legion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#We_Are_Legion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Filme"/>
+        <untitled-ontology-16:resumo xml:lang="pt-br">Este documentário nos leva para dentro do mundo do Anonymous, o grupo de hackers radicais que se tornou símbolo da desobediência civil na era digital.</untitled-ontology-16:resumo>
+        <untitled-ontology-16:titulo xml:lang="pt-br">Nós Somos Anonymous</untitled-ontology-16:titulo>
+        <untitled-ontology-16:titulo xml:lang="en">We Are Legion</untitled-ontology-16:titulo>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
