@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16/"
+     xml:base="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#atualEm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#atualEm">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#trabalha"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#edita -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#edita">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#trabalha"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#produz -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#produz">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#trabalha"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#trabalha -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#trabalha"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Ator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Ator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Conteudo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Conteudo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#ConteudoAudioVisual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#ConteudoAudioVisual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Conteudo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Editor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Editor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Filme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Filme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#ConteudoAudioVisual"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Midia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Midia"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Pessoa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Pessoa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Produtor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Produtor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Série -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Série">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#ConteudoAudioVisual"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
