@@ -43,6 +43,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#ehRoteirista -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#ehRoteirista">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#trabalha"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#ConteudoAudioVisual"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Roteirista"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#elenco -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#elenco">
@@ -105,6 +115,15 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#dataNascimento">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Pessoa"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#descricao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#descricao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Conteudo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -274,6 +293,14 @@
     <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Produtor -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Produtor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Roteirista -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Roteirista">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Pessoa"/>
     </owl:Class>
     
