@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16/"
-     xml:base="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16/"
+<rdf:RDF xmlns="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix/"
+     xml:base="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:untitled-ontology-16="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16"/>
+     xmlns:Libreflix="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix"/>
     
 
 
@@ -22,49 +22,61 @@
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#atuaEm -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#atuaEm -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#atuaEm">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#trabalha"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#elenco"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#atuaEm">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#trabalha"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#elenco"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Ator"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#ConteudoAudioVisual"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#edita -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#edita -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#edita">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#trabalha"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#edita">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#trabalha"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Editor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#ConteudoAudioVisual"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#elenco -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#elenco -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#elenco">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Ator"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#ConteudoAudioVisual"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#elenco">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Ator"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#ConteudoAudioVisual"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#localizacao -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#localizacao -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#localizacao"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#localizacao"/>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#produz -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#produz -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#produz">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#trabalha"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#produz">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#trabalha"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Produtor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#ConteudoAudioVisual"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#trabalha -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#tem -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#trabalha"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#tem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#trabalha -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#trabalha"/>
     
 
 
@@ -79,65 +91,84 @@
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#dataLancamento -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#dataLancamento -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#dataLancamento">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Conteudo"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#dataLancamento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Conteudo"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#duracao -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#dataNascimento -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#duracao">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#ConteudoAudioVisual"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#dataNascimento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#duracao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#duracao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#ConteudoAudioVisual"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#idioma -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#idioma -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#idioma">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Audio"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Legenda"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#idioma">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Audio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Legenda"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#idiomaNativo -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#idiomaNativo -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#idiomaNativo">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#idiomaNativo">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Conteudo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Conteudo"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#magnetLink -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#magnetLink -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#magnetLink">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Torrent"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#resumo -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#resumo">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Conteudo"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#magnetLink">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Torrent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#titulo -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#nome -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#titulo">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Conteudo"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#nome">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#resumo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#resumo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Conteudo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#titulo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#titulo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Conteudo"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -154,120 +185,120 @@
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Arquivo -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Arquivo -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Arquivo"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Arquivo"/>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Ator -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Ator -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Ator">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Pessoa"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Ator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Pessoa"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Audio -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Audio -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Audio">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Arquivo"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Audio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Arquivo"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Conteudo -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Conteudo -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Conteudo"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Conteudo"/>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#ConteudoAudioVisual -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#ConteudoAudioVisual -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#ConteudoAudioVisual">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Conteudo"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#ConteudoAudioVisual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Conteudo"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Editor -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Editor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Editor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Pessoa"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Editor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Pessoa"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Filme -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Filme -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Filme">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#ConteudoAudioVisual"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Filme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#ConteudoAudioVisual"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Legenda -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Legenda -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Legenda">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Arquivo"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Legenda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Arquivo"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Local -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Local -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Local"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Local"/>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Midia -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Midia -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Midia"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Midia"/>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#MidiaVirtual -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#MidiaVirtual -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#MidiaVirtual">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Midia"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#MidiaVirtual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Midia"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Pessoa -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Pessoa -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Pessoa"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Pessoa"/>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Produtor -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Produtor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Produtor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Pessoa"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Produtor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Pessoa"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Stream -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Stream -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Stream">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#MidiaVirtual"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Stream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#MidiaVirtual"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Série -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Série -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Série">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#ConteudoAudioVisual"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Série">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#ConteudoAudioVisual"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Torrent -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Torrent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Torrent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#MidiaVirtual"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Torrent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#MidiaVirtual"/>
     </owl:Class>
     
 
@@ -283,13 +314,13 @@
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#We_Are_Legion -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#We_Are_Legion -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#We_Are_Legion">
-        <rdf:type rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/untitled-ontology-16#Filme"/>
-        <untitled-ontology-16:resumo xml:lang="pt-br">Este documentário nos leva para dentro do mundo do Anonymous, o grupo de hackers radicais que se tornou símbolo da desobediência civil na era digital.</untitled-ontology-16:resumo>
-        <untitled-ontology-16:titulo xml:lang="pt-br">Nós Somos Anonymous</untitled-ontology-16:titulo>
-        <untitled-ontology-16:titulo xml:lang="en">We Are Legion</untitled-ontology-16:titulo>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#We_Are_Legion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Filme"/>
+        <Libreflix:resumo xml:lang="pt-br">Este documentário nos leva para dentro do mundo do Anonymous, o grupo de hackers radicais que se tornou símbolo da desobediência civil na era digital.</Libreflix:resumo>
+        <Libreflix:titulo xml:lang="pt-br">Nós Somos Anonymous</Libreflix:titulo>
+        <Libreflix:titulo xml:lang="en">We Are Legion</Libreflix:titulo>
     </owl:NamedIndividual>
 </rdf:RDF>
 
