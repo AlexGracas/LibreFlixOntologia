@@ -1,0 +1,166 @@
+{
+  "baseIRI": "http://libreflix.org/base/",
+  "namespaces": {
+    "libreflix": "http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix"
+  },
+  "subjectMappings": [
+    {
+      "propertyMappings": [
+        {
+          "property": {
+            "transformation": {
+              "expression": "libreflix",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "duracao"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "duration",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "libreflix",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "titulo"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "title",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "libreflix",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "resumo"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "sinopse",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "transformation": {
+          "expression": "libreflix:Filme",
+          "language": "prefix"
+        },
+        "valueSource": {
+          "columnName": "permalink",
+          "source": "column"
+        }
+      },
+      "typeMappings": [
+        {
+          "transformation": {
+            "expression": "libreflix",
+            "language": "prefix"
+          },
+          "valueSource": {
+            "source": "constant",
+            "constant": "Filme"
+          }
+        }
+      ]
+    },
+    {
+      "propertyMappings": [],
+      "subject": {
+        "transformation": {
+          "expression": "libreflix:Ator",
+          "language": "prefix"
+        },
+        "valueSource": {
+          "columnName": "crew/cast/0",
+          "source": "column"
+        }
+      },
+      "typeMappings": [
+        {
+          "transformation": {
+            "expression": "libreflix",
+            "language": "prefix"
+          },
+          "valueSource": {
+            "source": "constant",
+            "constant": "Ator"
+          }
+        }
+      ]
+    },
+    {
+      "propertyMappings": [
+        {
+          "property": {
+            "transformation": {
+              "expression": "libreflix",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "nome"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "crew/director/0",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "transformation": {
+          "expression": "libreflix:Diretor\\",
+          "language": "prefix"
+        },
+        "valueSource": {
+          "columnName": "crew/director/0",
+          "source": "column"
+        }
+      },
+      "typeMappings": []
+    }
+  ]
+}
