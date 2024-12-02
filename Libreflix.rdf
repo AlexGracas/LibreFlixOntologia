@@ -66,9 +66,12 @@
     
 
 
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#localizacao -->
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#originarioDo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#localizacao"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#originarioDo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Conteudo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Local"/>
+    </owl:ObjectProperty>
     
 
 
@@ -206,17 +209,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#idiomaNativo">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Conteudo"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#magnetLink -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#magnetLink">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#Torrent"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
