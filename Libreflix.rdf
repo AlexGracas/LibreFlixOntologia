@@ -159,6 +159,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#classificacaoIndicativa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#classificacaoIndicativa"/>
+    
+
+
     <!-- http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#dataLancamento -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#dataLancamento">
