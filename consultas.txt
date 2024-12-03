@@ -1,0 +1,52 @@
+-------------------------------------------------------------------------
+1. Qual a classificação indicativa das obras que possuem “Dráuzio Varella” como ator/entrevistado no catálogo da Libreflix?
+-------------------------------------------------------------------------
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX libreflix: <http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix>
+SELECT ?titulo ?classInd
+
+WHERE {
+
+	?ator libreflix:atuaEm ?obra; 
+    		libreflix:nome "Dráuzio Varella".
+    ?obra libreflix:titulo ?titulo;
+    		libreflix:classificacaoIndicativa ?classInd
+
+---------------------------------------------------------------------------
+2. Qual o título e o diretor do filme mais longo do catálogo da Libreflix?
+---------------------------------------------------------------------------
+
+PREFIX libreflix: <http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix>
+
+SELECT ?title ?directorName
+WHERE {
+  ?director0 libreflix:dirige ?obra ;
+    		libreflix:nome ?directorName.
+  ?obra libreflix:titulo ?title ;
+        libreflix:duracao ?duration .
+  OPTIONAL { ?director1 libreflix:dirige ?obra }
+}
+ORDER BY DESC(?duration)
+Limit 1
+
+
+-----------------------------------------------------------------------------
+3- Qual o diretor dirigiu mais obras audiovisuais no catálogo da Libreflix?
+-----------------------------------------------------------------------------
+
+PREFIX libreflix: <http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix>
+
+SELECT ?nomeDiretor (COUNT(?obra) AS ?obraCount)
+WHERE {
+  ?director libreflix:dirige ?obra ;
+   			libreflix:nome ?nomeDiretor
+}
+GROUP BY ?nomeDiretor
+ORDER BY DESC(?obraCount)
+LIMIT 1
+
+
+
+    
+}

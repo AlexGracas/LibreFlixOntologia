@@ -1,0 +1,417 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix">
+    <Prefix name="" IRI="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="Libreflix" IRI="http://www.semanticweb.org/alexgracas/ontologies/2024/10/Libreflix#"/>
+    <Declaration>
+        <Class IRI="#Arquivo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Audio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conteudo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConteudoAudioVisual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diretor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Editor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Filme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Legenda"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Local"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Midia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MidiaVirtual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pessoa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Produtor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Roteirista"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stream"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Série"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Torrent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#atuaEm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dirige"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#edita"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ehRoteirista"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#originarioDo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#produz"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temDiretor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temEditor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temElenco"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temEquipe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temProdutor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temRoteirista"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#trabalha"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#classificacaoIndicativa"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dataLancamento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dataNascimento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descricao"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#duracao"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idioma"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idiomaNativo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nome"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#resumo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#titulo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#We_Are_Legion"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Ator"/>
+        <Class IRI="#Pessoa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Audio"/>
+        <Class IRI="#Arquivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConteudoAudioVisual"/>
+        <Class IRI="#Conteudo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diretor"/>
+        <Class IRI="#Pessoa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Editor"/>
+        <Class IRI="#Pessoa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Filme"/>
+        <Class IRI="#ConteudoAudioVisual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Legenda"/>
+        <Class IRI="#Arquivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MidiaVirtual"/>
+        <Class IRI="#Midia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Produtor"/>
+        <Class IRI="#Pessoa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Roteirista"/>
+        <Class IRI="#Pessoa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stream"/>
+        <Class IRI="#MidiaVirtual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Série"/>
+        <Class IRI="#ConteudoAudioVisual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Torrent"/>
+        <Class IRI="#MidiaVirtual"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Filme"/>
+        <NamedIndividual IRI="#We_Are_Legion"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#resumo"/>
+        <NamedIndividual IRI="#We_Are_Legion"/>
+        <Literal xml:lang="pt-br">Este documentário nos leva para dentro do mundo do Anonymous, o grupo de hackers radicais que se tornou símbolo da desobediência civil na era digital.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#titulo"/>
+        <NamedIndividual IRI="#We_Are_Legion"/>
+        <Literal xml:lang="pt-br">Nós Somos Anonymous</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#titulo"/>
+        <NamedIndividual IRI="#We_Are_Legion"/>
+        <Literal xml:lang="en">We Are Legion</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#atuaEm"/>
+        <ObjectProperty IRI="#trabalha"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#dirige"/>
+        <ObjectProperty IRI="#trabalha"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#edita"/>
+        <ObjectProperty IRI="#trabalha"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ehRoteirista"/>
+        <ObjectProperty IRI="#trabalha"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#produz"/>
+        <ObjectProperty IRI="#trabalha"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#temDiretor"/>
+        <ObjectProperty IRI="#temEquipe"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#temEditor"/>
+        <ObjectProperty IRI="#temEquipe"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#temElenco"/>
+        <ObjectProperty IRI="#temEquipe"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#temProdutor"/>
+        <ObjectProperty IRI="#temEquipe"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#temRoteirista"/>
+        <ObjectProperty IRI="#temEquipe"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#atuaEm"/>
+        <ObjectProperty IRI="#temElenco"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#dirige"/>
+        <ObjectProperty IRI="#temDiretor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#edita"/>
+        <ObjectProperty IRI="#temEditor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#ehRoteirista"/>
+        <ObjectProperty IRI="#temRoteirista"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#produz"/>
+        <ObjectProperty IRI="#temProdutor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#temEquipe"/>
+        <ObjectProperty IRI="#trabalha"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#atuaEm"/>
+        <Class IRI="#Ator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dirige"/>
+        <Class IRI="#Diretor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#edita"/>
+        <Class IRI="#Editor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ehRoteirista"/>
+        <Class IRI="#ConteudoAudioVisual"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#originarioDo"/>
+        <Class IRI="#Conteudo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#produz"/>
+        <Class IRI="#Produtor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temElenco"/>
+        <Class IRI="#Ator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#atuaEm"/>
+        <Class IRI="#ConteudoAudioVisual"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dirige"/>
+        <Class IRI="#ConteudoAudioVisual"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#edita"/>
+        <Class IRI="#ConteudoAudioVisual"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ehRoteirista"/>
+        <Class IRI="#Roteirista"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#originarioDo"/>
+        <Class IRI="#Local"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#produz"/>
+        <Class IRI="#ConteudoAudioVisual"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temElenco"/>
+        <Class IRI="#ConteudoAudioVisual"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#idiomaNativo"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dataLancamento"/>
+        <Class IRI="#Conteudo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dataNascimento"/>
+        <Class IRI="#Pessoa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descricao"/>
+        <Class IRI="#Conteudo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#duracao"/>
+        <Class IRI="#ConteudoAudioVisual"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#idioma"/>
+        <Class IRI="#Audio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#idioma"/>
+        <Class IRI="#Legenda"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nome"/>
+        <Class IRI="#Pessoa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#resumo"/>
+        <Class IRI="#Conteudo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#titulo"/>
+        <Class IRI="#Conteudo"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#dataLancamento"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dataNascimento"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#descricao"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#duracao"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#idioma"/>
+        <Datatype abbreviatedIRI="xsd:language"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#idiomaNativo"/>
+        <Datatype abbreviatedIRI="xsd:language"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nome"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#resumo"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#titulo"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
